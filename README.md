@@ -1,30 +1,29 @@
-# SpeakerVerification
+## Speaker Verification
+PresentID Speaker verification API checks whether two voices belong to the same  person or not. This capability is potentially useful in call centers. 
 
-The Verify API performs an authentication against two detected voices or from one detected voice to one person object. Practically, it evaluates whether two voices belong to the same person. This capability is potentially useful in security scenarios.
+**Input:**
+- Voice file
+- Voice URL link
+- Base64 Voice
 
-[Speaker Verification Tutorial Youtube Video](https://www.youtube.com/embed/GSj88iiHxoA)
+**Output:**
+- Result index
+- Result message
 
-> Due to the high accuracy of the core of the Speaker Verification API, the audio file must be recorded and sent in `wav, m4a and flac` formats. Note that *mp3, aac, ogg and etc.* files can not provide good accuracy due to compression.
+**Ability & Potentials:**
+- Accuracy over 90%.
+- Less than 1 second processing time.
+- No need for GPU.
+- Language & text-independent.
+- Easy integration with your app.
+- Support IOS, Android, Windows and Mac devices.
+- Easy integration with your app.
 
-- Accuracy higher than 99% in real world
+**Use Cases:**
+- Call center
 
-###Python Quick Start
-```python
-  import requests
-
- api_url = 'Speaker Verification URL'
- api_key = 'Your API Key'
-
-sound1_path = 'Path to sound1 directory'
- sound1_name = 'Sound name1'
- sound2_path = 'Path to sound2 directory'
- sound2_name = 'Sound name2'
-
- files = {'sound1': (sound1_name, open(sound1_path + sound1_name, 'rb'), 'multipart/form-data'), 
-          'sound2': (sound2_name, open(sound2_path + sound2_name, 'rb'), 'multipart/form-data')}
- header = {
-     "x-rapidapi-host": "speaker-verification1.p.rapidapi.com",
-     "x-rapidapi-key": api_key
- }
- response = requests.post(api_url, files=files, headers=header)
-```
+**Rules & Restrictions:**
+- Send data via Base64 or a voice URL or voice file.
+- The voice must be between three seconds and one minute.
+- The voices must not exceed 5 MB.
+- Supported file types: WAV, MP3, M4A, FLAC, AAC, OGG.
