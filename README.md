@@ -1,6 +1,10 @@
 ## Speaker Verification
 PresentID Speaker verification API checks whether two voices belong to the same  person or not. This capability is potentially useful in call centers. 
 
+
+![speaker](https://user-images.githubusercontent.com/63470748/119768372-60391b00-be6d-11eb-994d-00c0bc06039d.jpeg)
+
+
 **Input:**
 - Voice file
 - Voice URL link
@@ -27,3 +31,6 @@ PresentID Speaker verification API checks whether two voices belong to the same 
 - The voice must be between three seconds and one minute.
 - The voices must not exceed 5 MB.
 - Supported file types: WAV, MP3, M4A, FLAC, AAC, OGG.
+
+## Free try in RapidAPI
+https://rapidapi.com/PresentID/api/speaker-verification1
