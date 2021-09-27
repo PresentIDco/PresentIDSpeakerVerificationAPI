@@ -4,7 +4,6 @@ PresentID Speaker verification API checks whether two voices belong to the same 
 We have proposed a deep learning-based method for speaker verification. Our team worked on this project for more than 1 year and the accuracy has passed over benchmarks such as the accuracy of the paper by Andrew Zisserman Group at Oxford University. In contrast with other methods that are text-dependent, our model is text and language-independent. On the other hand, the processing speed of our model is less than 1 sec and the model verifies a person by just two voices with a length of 4 secs. We have trained the model on tracks with English, French, Spanish, German, Persian, and Arabic languages. Our model is robust to the environment and virtual noises.
 
 
-![speaker](https://user-images.githubusercontent.com/63470748/119768372-60391b00-be6d-11eb-994d-00c0bc06039d.jpeg)
 
 **Youtube Videos**
 - https://www.youtube.com/embed/GSj88iiHxoA
